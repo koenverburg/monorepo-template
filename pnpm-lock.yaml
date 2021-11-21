@@ -7,10 +7,15 @@ importers:
       esbuild: ^0.13.12
       esbuild-jest: ^0.5.0
       jest: ^27.3.1
+      jest-esbuild: ^0.2.0
+      typescript: ^4.4.2
     dependencies:
       esbuild: 0.13.12
       esbuild-jest: 0.5.0_esbuild@0.13.12
       jest: 27.3.1
+    devDependencies:
+      jest-esbuild: 0.2.0_jest@27.3.1
+      typescript: 4.5.2
 
 packages:
 
@@ -1256,7 +1261,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-    dev: false
 
   /decimal.js/10.3.1:
     resolution: {integrity: sha512-V0pfhfr8suzyPGOx3nmq4aHqabehUZn6Ch9kyFpV79TGDTWFmHqUqXdabR7QHqxzrYolF4+tVmJhUG4OURg5dQ==}
@@ -1498,6 +1502,12 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /esbuild/0.12.29:
+    resolution: {integrity: sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /esbuild/0.13.12:
     resolution: {integrity: sha512-vTKKUt+yoz61U/BbrnmlG9XIjwpdIxmHB8DlPR0AAW6OdS+nBQBci6LUHU2q9WbBobMEIQxxDpKbkmOGYvxsow==}
@@ -2282,6 +2292,18 @@ packages:
       jest-util: 27.3.1
     dev: false
 
+  /jest-esbuild/0.2.0_jest@27.3.1:
+    resolution: {integrity: sha512-isWvmvKjHc0aot+rBZ64Epcdjh5aKX4Xe/g64evjM8CWYijO1DP14m/McyNzw3+FCp/5kRAWoPOwJ5lumTjZYQ==}
+    peerDependencies:
+      jest: ^27.0.3
+    dependencies:
+      debug: 4.3.2
+      esbuild: 0.12.29
+      jest: 27.3.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /jest-get-type/27.3.1:
     resolution: {integrity: sha512-+Ilqi8hgHSAdhlQ3s12CAVNd8H96ZkQBfYoXmArzZnOfAtVAJEiPDBirjByEblvG/4LPJmkL+nBqPO3A1YJAEg==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -2872,7 +2894,6 @@ packages:
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-    dev: false
 
   /nanomatch/1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
@@ -3573,6 +3594,12 @@ packages:
     dependencies:
       is-typedarray: 1.0.0
     dev: false
+
+  /typescript/4.5.2:
+    resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
 
   /union-value/1.0.1:
     resolution: {integrity: sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==}
