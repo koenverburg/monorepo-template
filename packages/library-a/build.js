@@ -2,7 +2,6 @@
 const ts = require('typescript')
 const { build } = require('esbuild')
 const tsconfig = require('./tsconfig.json')
-// const { build, tsconfig, dirname, log } = require('estrella')
 
 function generateTypeDefs(entryFiles, outDir) {
   const filenames = Array.from(
