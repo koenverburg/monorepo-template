@@ -2,20 +2,20 @@
   "name": "monorepo-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "packages:test": "pnpm test --filter '@packages/*'",
-    "packages:build": "pnpm build --filter '@packages/*'"
+    "packages:test": "pnpm run test --filter @packages/*",
+    "packages:build": "pnpm run build --filter @packages/*",
+    "packages:clean": "pnpm run clean --filter @packages/*"
   },
-  "author": "",
+  "author": "Koen Verburg <creativekoen@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "esbuild": "^0.13.12",
-    "esbuild-jest": "^0.5.0",
-    "jest": "^27.3.1"
+    "typescript": "^4.4.2"
   },
   "devDependencies": {
-    "jest-esbuild": "^0.2.0",
-    "typescript": "^4.4.2"
+    "esbuild": "^0.12.24",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^27.1.0",
+    "rimraf": "^3.0.2"
   }
 }
